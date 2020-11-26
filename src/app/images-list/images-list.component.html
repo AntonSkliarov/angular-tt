@@ -1,0 +1,18 @@
+<p>images-list works!</p>
+
+<div class="input-select-container">
+  <input type="text" placeholder="enter text to search for pictures">
+  <select value="10">
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="50">50</option>
+    <option value="100">100</option>
+  </select>
+</div>
+
+<ul>
+  <li *ngFor="let image of images">
+    {{ image.user }}
+    <img [src]="image.previewURL" [alt]="image.tags">
+  </li>
+</ul>

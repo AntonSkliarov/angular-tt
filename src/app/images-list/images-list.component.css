@@ -1,0 +1,5 @@
+.input-select-container {
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
