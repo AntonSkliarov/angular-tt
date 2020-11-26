@@ -10,9 +10,9 @@
   </select>
 </div>
 
-<ul>
-  <li *ngFor="let image of images">
-    {{ image.user }}
-    <img [src]="image.previewURL" [alt]="image.tags">
-  </li>
-</ul>
+  <ul>
+    <li *ngFor="let image of imagesList">
+      {{ image.user }}
+      <img [src]="image.previewURL" [alt]="image.tags">
+    </li>
+  </ul>
